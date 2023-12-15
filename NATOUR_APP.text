@@ -1,0 +1,44 @@
+### DATABASE
+  mongodb atlas - project 0
+  mongodb+srv://<username>:<password>@cluster0.hzaa03l.mongodb.net/natours?retryWrites=true&w=majority
+  Database User,  @ = %40
+     projectname - project0
+     clustername - clustor0 
+     Username - gulamjilanicse
+     Password - 
+     Dbname - natours
+
+
+### document is a instance of model. Like, object is a blueprint(instance) of a class.
+     Tour - model(class)
+Tour.find() - all these types of query returns query object, And we can chain or use query methods after them.
+Query.prototype.mehtods - object accessing the methods that are created using Query class.
+
+
+echo "# natour-api-and-app" >> README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin https://github.com/GulamJilani5/natour-api-and-app.git
+  git push -u origin main
+…or push an existing repository from the command line
+  git remote add origin https://github.com/GulamJilani5/natour-api-and-app.git
+  git branch -M main
+  git push -u origin main
+
+
+  ### package.json
+  /// For Mac
+  "scripts":{
+  "start:prod": "NODE_ENV=production nodemon server.js",
+  }
+  /// For Windows
+  // In my case it is not working , so i have to use change in .env, NODE_ENV=prodcution and
+  // disable the NODE_ENV=development and run npm start.
+  /// But in actual prodcution we should do below mentioned way
+  "scripts": {
+  "start:prod": "set NODE_ENV=production && node server.js"
+}
+/// TO run script on development we can run 'npm start'
+/// TO run script on production we can run 'npm run start:prod'
